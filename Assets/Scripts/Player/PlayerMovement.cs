@@ -41,6 +41,9 @@ public class PlayerMovement : MonoBehaviour
     public delegate void OnSpeedChange(float speed);
     public static event OnSpeedChange onSpeedChange;
 
+    public event System.EventHandler OnJumpEvent;
+    public event System.EventHandler OnDashEvent;
+
     private void Start()
     {
         _controller = GetComponent<CharacterController>();
@@ -171,6 +174,7 @@ public class PlayerMovement : MonoBehaviour
                 _jumpCount--;
                 _isLanding = false;
                 Invoke("SetIsLanding", 0.3f);
+                OnJumpEvent?.Invoke(this, System.EventArgs.Empty);
             }
             else
                 _coyoteTimeCounter = 0; // Reset coyote time counter
@@ -185,6 +189,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 _isDashing = true;
                 _dashTime = Time.time + dashDuration; // Set end time for the dash
+                OnDashEvent?.Invoke(this, System.EventArgs.Empty);
             }
         }
     }

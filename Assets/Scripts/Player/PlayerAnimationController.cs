@@ -11,20 +11,29 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField] private Animator anim;
 
     private PlayerMovement _playerMovement;
+    private PlayerAttack _playerAttack;
     private Quaternion _initialRotation;
     private Vector3 _targetTilt;
     private float _currentSpeed;
     private float _speedVelocity;
 
-    private void Start()
+    private void OnEnable()
     {
         _playerMovement = GetComponentInParent<PlayerMovement>();
-        if (_playerMovement == null)
-        {
-            Debug.LogError("PlayerMovement script not found on the same GameObject.");
-            return;
-        }
+        _playerAttack = GetComponentInParent<PlayerAttack>();
 
+        _playerMovement.OnJumpEvent += JumpAnimation;
+        _playerMovement.OnDashEvent += DashAnimation;
+    }
+
+    private void OnDisable()
+    {
+        _playerMovement.OnJumpEvent -= JumpAnimation;
+        _playerMovement.OnDashEvent -= DashAnimation;
+    }
+
+    private void Start()
+    {
         _initialRotation = transform.rotation;
     }
 
@@ -35,6 +44,7 @@ public class PlayerAnimationController : MonoBehaviour
             UpdateRotation();
             UpdateTilt();
             MovementAnimation();
+            UpdateAttackAnimation();
         }
     }
 
@@ -43,6 +53,21 @@ public class PlayerAnimationController : MonoBehaviour
         float targetSpeed = _playerMovement._moveInput.magnitude;
         _currentSpeed = Mathf.SmoothDamp(_currentSpeed, targetSpeed, ref _speedVelocity, animationSmoothTime);
         anim.SetFloat("Speed", _currentSpeed);
+    }
+
+    private void JumpAnimation(object sender, System.EventArgs e)
+    {
+        anim.SetTrigger("Jump");
+    }
+
+    private void DashAnimation(object sender, System.EventArgs e)
+    {
+        anim.SetTrigger("Dash");
+    }
+
+    private void UpdateAttackAnimation()
+    {
+        anim.SetLayerWeight(0, _playerAttack.IsFiring ? 1 : 0);
     }
 
     private void UpdateRotation()
