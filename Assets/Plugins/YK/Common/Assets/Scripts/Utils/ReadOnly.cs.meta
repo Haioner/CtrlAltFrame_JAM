@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 8f35e10953488409e970707ef52fbea1
+timeCreated: 1500619448
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Utils/ReadOnly.cs
+  uploadId: 566140

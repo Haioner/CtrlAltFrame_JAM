@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b0484d3978eda6c40afa98118e58d5d1
+timeCreated: 1486720355
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Utils/UnityEditorUtils.cs
+  uploadId: 566140

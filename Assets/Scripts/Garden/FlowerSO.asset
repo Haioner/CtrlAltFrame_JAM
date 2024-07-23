@@ -13,14 +13,12 @@ MonoBehaviour:
   m_Name: FlowerSO
   m_EditorClassIdentifier: 
   colorList:
-  - {r: 0.14901961, g: 0.5176471, b: 0.8078432, a: 1}
-  - {r: 0.21176472, g: 0.70980394, b: 0.9607844, a: 1}
-  - {r: 0.18046346, g: 1.0592737, b: 0.93465334, a: 1}
-  - {r: 0.25521386, g: 1.4980392, b: 1.3217994, a: 1}
-  - {r: 1.0208554, g: 5.992157, b: 5.2871976, a: 1}
+  - {r: 0.123487, g: 0.46934292, b: 1.1382278, a: 1}
+  - {r: 0.16252312, g: 0.6177094, b: 1.4980391, a: 1}
+  - {r: 0.65009254, g: 2.4708378, b: 5.992157, a: 1}
+  - {r: 2.60037, g: 9.88335, b: 23.968626, a: 1}
   flowerSprites:
-  - {fileID: -2076649937, guid: 53f6eb07c909261459f4f31cba34f1b4, type: 3}
-  - {fileID: 150654444, guid: 53f6eb07c909261459f4f31cba34f1b4, type: 3}
-  - {fileID: -1140707331, guid: 53f6eb07c909261459f4f31cba34f1b4, type: 3}
-  - {fileID: -1594482731, guid: 53f6eb07c909261459f4f31cba34f1b4, type: 3}
-  - {fileID: -1736214467, guid: 53f6eb07c909261459f4f31cba34f1b4, type: 3}
+  - {fileID: 2012271223, guid: 99744c3c08e82c74a9bcebbff37b97b3, type: 3}
+  - {fileID: 727310977, guid: 99744c3c08e82c74a9bcebbff37b97b3, type: 3}
+  - {fileID: 2084276440, guid: 99744c3c08e82c74a9bcebbff37b97b3, type: 3}
+  - {fileID: -640578542, guid: 99744c3c08e82c74a9bcebbff37b97b3, type: 3}

@@ -37,6 +37,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _EmissionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionTexture:
+        m_Texture: {fileID: 2800000, guid: 093fe11861b5fcf44aec87b38b659a80, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -62,7 +70,7 @@ Material:
     - _Alpha_Clipping: 0.5
     - _Ambient_Occlusion: 1
     - _Metallic: 0
-    - _NormalOffset: 0.12
+    - _NormalOffset: 0.46
     - _NormalOpacity: 1
     - _NormalStrength: 8
     - _QueueControl: 0

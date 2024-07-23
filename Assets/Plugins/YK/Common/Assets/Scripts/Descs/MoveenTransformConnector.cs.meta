@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: f550f4e416c643a891cfe88ff0d9469c
+timeCreated: 1505892393
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Descs/MoveenTransformConnector.cs
+  uploadId: 566140

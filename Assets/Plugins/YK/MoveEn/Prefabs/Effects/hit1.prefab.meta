@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f79a42cb14f9e41bc84a0fa5d739db20
+timeCreated: 1510835799
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Effects/hit1.prefab
+  uploadId: 566140

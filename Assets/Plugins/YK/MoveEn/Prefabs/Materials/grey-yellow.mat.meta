@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 01f9aeae75b594d69848d36020409bdd
+timeCreated: 1512766054
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Materials/grey-yellow.mat
+  uploadId: 566140

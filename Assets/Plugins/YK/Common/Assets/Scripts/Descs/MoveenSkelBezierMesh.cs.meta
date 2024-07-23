@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2e01665e8b0f14ad1a251a0706ebb0d7
+timeCreated: 1503302411
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Descs/MoveenSkelBezierMesh.cs
+  uploadId: 566140

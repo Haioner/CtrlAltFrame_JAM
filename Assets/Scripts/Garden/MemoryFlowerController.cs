@@ -5,7 +5,8 @@ public class MemoryFlowerController : MonoBehaviour, IDamageable
 {
     [Header("Flower")]
     [SerializeField] private FlowerSO flowerSO;
-    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private SpriteRenderer flowerRenderer;
+    [SerializeField] private SpriteRenderer orbRenderer;
     [SerializeField] private ParticleSystem fullyParticle;
 
     [Header("Energy")]
@@ -38,12 +39,12 @@ public class MemoryFlowerController : MonoBehaviour, IDamageable
 
     private void UpdateFlowerEmission()
     {
-        spriteRenderer.material.SetColor("_EmissionColor", flowerSO.colorList[GetEnergyIndex(flowerSO.colorList.Count)]);
+        orbRenderer.material.SetColor("_EmissionColor", flowerSO.colorList[GetEnergyIndex(flowerSO.colorList.Count)]);
     }
 
     private void UpdateFlowerSprite()
     {
-        spriteRenderer.sprite = flowerSO.flowerSprites[GetEnergyIndex(flowerSO.flowerSprites.Count)];
+        flowerRenderer.sprite = flowerSO.flowerSprites[GetEnergyIndex(flowerSO.flowerSprites.Count)];
     }
 
     private void CheckFullOfEnergy()

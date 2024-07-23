@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: cb5f55e9985f241f19480a70fbc00b4a
+timeCreated: 1512739699
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Materials/orange.mat
+  uploadId: 566140

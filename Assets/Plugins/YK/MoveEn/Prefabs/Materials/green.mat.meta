@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a34c054ebd85d4f3387e9f204bb60ab7
+timeCreated: 1505332764
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Materials/green.mat
+  uploadId: 566140

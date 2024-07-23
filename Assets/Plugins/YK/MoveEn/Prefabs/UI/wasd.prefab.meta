@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4cb2429cec92c4b99ad501ce7594bfd3
+timeCreated: 1510991497
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/UI/wasd.prefab
+  uploadId: 566140

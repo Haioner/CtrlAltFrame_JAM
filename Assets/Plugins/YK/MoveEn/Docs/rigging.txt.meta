@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 72ddbd5c23cf24cc88b88b6d8590aa56
+timeCreated: 1507127235
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Docs/rigging.txt
+  uploadId: 566140

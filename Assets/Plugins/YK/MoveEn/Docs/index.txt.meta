@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: befefe79069ad403eaabb16dca50dd88
+timeCreated: 1507127122
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Docs/index.txt
+  uploadId: 566140

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c258d7b8c22244d64ad4425a49888c65
+timeCreated: 1507315311
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Geometry/Bone/thin.prefab
+  uploadId: 566140

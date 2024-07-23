@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d5b99e77da52e413cb933cc9595252cb
+timeCreated: 1502457624
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Scenes/Custom joints.unity
+  uploadId: 566140

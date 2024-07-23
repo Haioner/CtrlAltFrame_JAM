@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e438e8b21edad47e286e6f57c24b1ff3
+timeCreated: 1509100466
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Geometry/Bone/bone 2.prefab
+  uploadId: 566140

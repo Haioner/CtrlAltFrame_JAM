@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 30dddf0c8a6e4e88a9eefc6c3aacc740
+timeCreated: 1519280937
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Editor/Scripts/BindWarningAttributeDrawer.cs
+  uploadId: 566140

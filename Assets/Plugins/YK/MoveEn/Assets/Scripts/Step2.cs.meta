@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7c979ab8f103848a89a5f4ef913e9f2c
+timeCreated: 1505665271
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Assets/Scripts/Step2.cs
+  uploadId: 566140

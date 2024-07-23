@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 42d4a8be028e5444baff591e52f87877
+timeCreated: 1500618991
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Editor/Scripts/ReadOnlyAttributeDrawer.cs
+  uploadId: 566140

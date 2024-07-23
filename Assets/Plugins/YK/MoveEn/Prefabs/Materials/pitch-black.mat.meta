@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 782c58d70d7a84851b85b7771b659c6a
+timeCreated: 1516962033
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Materials/pitch-black.mat
+  uploadId: 566140

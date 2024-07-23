@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0a2797e9a95004b749aeb8d670488f27
+timeCreated: 1510569613
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Effects/shells.mat
+  uploadId: 566140

@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: c3d2f56a713f49f896ade4abde4cf35b
+timeCreated: 1519281463
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Utils/BindOrLocalWarningAttribute.cs
+  uploadId: 566140

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e39bf66f368ea4c30bdbf145ff3712c4
+timeCreated: 1507205065
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Geometry/Bone/blocked.prefab
+  uploadId: 566140

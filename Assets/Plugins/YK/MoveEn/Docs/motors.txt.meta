@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2959d60146e794e9281afa3e1b40f839
+timeCreated: 1510130784
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Docs/motors.txt
+  uploadId: 566140

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a2355f14f40f84a78b660208a6bceef9
+timeCreated: 1499063476
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Utils/Tuple.cs
+  uploadId: 566140

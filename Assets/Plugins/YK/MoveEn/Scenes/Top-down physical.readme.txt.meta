@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a5dcaed4e7179429e8add9296acd67da
+timeCreated: 1511532029
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Scenes/Top-down physical.readme.txt
+  uploadId: 566140

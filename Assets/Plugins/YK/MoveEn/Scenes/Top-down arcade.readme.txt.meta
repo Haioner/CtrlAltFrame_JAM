@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 42f32a25d2fa943e19c79534f83c68f1
+timeCreated: 1515417668
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Scenes/Top-down arcade.readme.txt
+  uploadId: 566140

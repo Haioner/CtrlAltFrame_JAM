@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a53163c6ee96d4139b20ecdc3d210275
+timeCreated: 1496471844
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Utils/MUtil.cs
+  uploadId: 566140

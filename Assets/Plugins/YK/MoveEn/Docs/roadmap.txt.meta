@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0ca5fb9067ce144ccb672dbefaf89155
+timeCreated: 1507127235
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Docs/roadmap.txt
+  uploadId: 566140

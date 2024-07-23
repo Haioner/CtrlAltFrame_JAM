@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: f328702614964e789ab132779913c9ab
+timeCreated: 1512212230
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Editor/Scripts/MoveenSkelLimb2Editor.cs
+  uploadId: 566140

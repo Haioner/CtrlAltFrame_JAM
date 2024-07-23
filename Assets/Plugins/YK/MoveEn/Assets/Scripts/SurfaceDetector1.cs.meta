@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 36e06c014149841c6a82560c06bf50d4
+timeCreated: 1499063472
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Assets/Scripts/SurfaceDetector1.cs
+  uploadId: 566140

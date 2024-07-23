@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 308d3afc488cf48e69cd378487007955
+timeCreated: 1510568733
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Effects/smoke thrust.prefab
+  uploadId: 566140

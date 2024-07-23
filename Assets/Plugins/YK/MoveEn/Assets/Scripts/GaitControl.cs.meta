@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e6908727de4324ab680755685026319c
+timeCreated: 1494058262
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Assets/Scripts/GaitControl.cs
+  uploadId: 566140

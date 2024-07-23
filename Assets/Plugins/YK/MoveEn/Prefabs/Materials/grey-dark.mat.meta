@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d92aa6803caa2456db9b09a3752e259e
+timeCreated: 1513975053
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Materials/grey-dark.mat
+  uploadId: 566140

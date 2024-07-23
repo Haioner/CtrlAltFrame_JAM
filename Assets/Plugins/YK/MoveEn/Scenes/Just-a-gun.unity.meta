@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3e929452da2bd440bbeaf9f7cdb6f3fe
+timeCreated: 1515155090
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Scenes/Just-a-gun.unity
+  uploadId: 566140

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a28a72b4b82ef4079aedc1ab4ae160bb
+timeCreated: 1505330529
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Materials/red.mat
+  uploadId: 566140

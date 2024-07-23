@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9ff4bdad3e25d4c1397622d8cec63c43
+timeCreated: 1513417321
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Scenes/Top-down arcade.unity
+  uploadId: 566140

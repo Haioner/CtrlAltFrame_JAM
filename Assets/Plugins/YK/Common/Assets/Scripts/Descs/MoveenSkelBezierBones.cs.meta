@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 8705e77fe8bf64b9da7ca4bf04b38322
+timeCreated: 1503387686
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Descs/MoveenSkelBezierBones.cs
+  uploadId: 566140

@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 044a3443fe01454cb8aaf9f36460590d
+timeCreated: 1506332564
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Descs/MoveenTransformCopier.cs
+  uploadId: 566140

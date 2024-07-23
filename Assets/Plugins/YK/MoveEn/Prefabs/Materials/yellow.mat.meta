@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e4aa4d4f1fe8b4c49aebad0b07a305c8
+timeCreated: 1515853748
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Materials/yellow.mat
+  uploadId: 566140

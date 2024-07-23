@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 17f0e59d551f74cc9b378e0fb6b41b86
+timeCreated: 1509020992
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/MoveEn/Prefabs/Geometry/Hip/hip.prefab
+  uploadId: 566140

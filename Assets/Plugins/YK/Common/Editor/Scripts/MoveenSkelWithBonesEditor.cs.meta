@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d8812505e7f5e42f28e27a781f446c68
+timeCreated: 1502959227
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Editor/Scripts/MoveenSkelWithBonesEditor.cs
+  uploadId: 566140

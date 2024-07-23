@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: e8a291ab7f0e432a90443614f51cdeb3
+timeCreated: 1517511294
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Utils/FloatWarningAttribute.cs
+  uploadId: 566140

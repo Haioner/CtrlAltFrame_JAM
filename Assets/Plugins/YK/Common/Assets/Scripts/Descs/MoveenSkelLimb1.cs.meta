@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 16a68f11f3ae74992886f3a8fc0fa968
+timeCreated: 1503127576
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Descs/MoveenSkelLimb1.cs
+  uploadId: 566140

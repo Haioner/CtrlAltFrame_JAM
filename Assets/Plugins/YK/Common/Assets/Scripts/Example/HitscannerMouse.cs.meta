@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: d26d9fc3eb6d4730b5c0c3d6b1ffb9f9
+timeCreated: 1516894223
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101452
+  packageName: Moveen
+  packageVersion: 0.83
+  assetPath: Assets/Plugins/YK/Common/Assets/Scripts/Example/HitscannerMouse.cs
+  uploadId: 566140
