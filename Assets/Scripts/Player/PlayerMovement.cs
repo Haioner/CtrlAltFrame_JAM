@@ -205,7 +205,7 @@ public class PlayerMovement : MonoBehaviour
         if (_moveInput.x != 0)
         {
             Vector3 scale = childGFX.localScale;
-            scale.x = Mathf.Sign(-_moveInput.x) * Mathf.Abs(scale.x);
+            scale.x = Mathf.Sign(_moveInput.x) * Mathf.Abs(scale.x);
             childGFX.localScale = scale;
         }
     }
