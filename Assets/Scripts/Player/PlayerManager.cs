@@ -29,10 +29,15 @@ public class PlayerManager : MonoBehaviour
     public float CurrentEnergy { get;private set; }
 
     private PlayerAttack playerAttack;
+    private PlayerMovement playerMovement;
+    private PlayerAnimationController playerAnimation;
 
     private void Start()
     {
         playerAttack = GetComponent<PlayerAttack>();
+        playerMovement = GetComponent<PlayerMovement>();
+        playerAnimation = GetComponentInChildren<PlayerAnimationController>();
+
         CurrentEnergy = maxEnergy;
     }
 
@@ -40,6 +45,14 @@ public class PlayerManager : MonoBehaviour
     {
         CalculatePlayerEnergy();
         CalculatePlayerColor();
+    }
+
+    public void SetPlayerControl(bool controlState)
+    {
+        playerAttack.enabled = controlState;
+        playerMovement.enabled = controlState;
+        playerAnimation.ResetAnimation();
+        playerAnimation.enabled = controlState;
     }
 
     public float GetMaxEnergy() { return maxEnergy; }

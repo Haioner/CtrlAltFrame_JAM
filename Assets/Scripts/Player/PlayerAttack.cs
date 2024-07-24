@@ -19,6 +19,8 @@ public class PlayerAttack : MonoBehaviour
     private Camera _camera;
     private float _nextAttackTime = 0f;
     private Vector3 _targetPoint;
+    private float currentAudioPitch = 1f;
+    private float currentAudioVolume = 1f;
 
     private void Start()
     {
@@ -45,6 +47,8 @@ public class PlayerAttack : MonoBehaviour
         if (playerManager.CurrentEnergy <= 0) 
         {
             DisableLineRenderer();
+            currentAudioPitch = 1;
+            currentAudioVolume = 1;
             return;
         }
 
@@ -60,6 +64,8 @@ public class PlayerAttack : MonoBehaviour
         else
         {
             DisableLineRenderer();
+            currentAudioPitch = 1;
+            currentAudioVolume = 1;
         }
     }
 
@@ -91,7 +97,12 @@ public class PlayerAttack : MonoBehaviour
             _targetPoint = ray.GetPoint(100f);
         }
 
-        SoundManager.PlayAudioClip(attackClip);
+        currentAudioPitch -= Time.deltaTime * 0.5f;
+        currentAudioPitch = Mathf.Clamp(currentAudioPitch, 0.7f, 1);
+        currentAudioVolume -= Time.deltaTime * 0.1f;
+        currentAudioVolume = Mathf.Clamp(currentAudioVolume, 0.1f, 1f);
+        SoundManager.PlayAudioClipVolumeAndPitch(attackClip, currentAudioVolume, currentAudioPitch);
+
         SpawnHitParticle();
     }
 

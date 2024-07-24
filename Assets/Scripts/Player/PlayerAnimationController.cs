@@ -48,11 +48,16 @@ public class PlayerAnimationController : MonoBehaviour
         }
     }
 
+    public void ResetAnimation()
+    {
+        anim.SetFloat("Speed", 0);
+    }
+
     private void MovementAnimation()
     {
-        float targetSpeed = _playerMovement._moveInput.magnitude;
-        _currentSpeed = Mathf.SmoothDamp(_currentSpeed, targetSpeed, ref _speedVelocity, animationSmoothTime);
-        anim.SetFloat("Speed", _currentSpeed);
+        //float targetSpeed = _playerMovement._moveInput.magnitude;
+        //_currentSpeed = Mathf.SmoothDamp(_currentSpeed, targetSpeed, ref _speedVelocity, animationSmoothTime);
+        anim.SetFloat("Speed", _playerMovement._moveInput.magnitude);
     }
 
     private void JumpAnimation(object sender, System.EventArgs e)

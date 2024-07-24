@@ -825,7 +825,7 @@ PlayerSettings:
     PS4: DOTWEEN
     PS5: DOTWEEN
     QNX: DOTWEEN
-    Standalone: DOTWEEN;TMP_PRESENT
+    Standalone: DOTWEEN;TMP_PRESENT;DREAMTECK_SPLINES
     VisionOS: DOTWEEN
     WebGL: DOTWEEN;TMP_PRESENT
     Windows Store Apps: DOTWEEN

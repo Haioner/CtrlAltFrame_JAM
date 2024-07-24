@@ -229,9 +229,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'test
-
-'
+        value: Once upon a time, there was a hidden magical garden that revealed
+          itself only at night, when the stars danced in the sky and the moon poured
+          its silvery glow upon the earth.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -243,9 +243,15 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: pt-BR
-        value: 
+        value: "Era uma vez um jardim m\xE1gico escondido, que se revelava apenas
+          \xE0 noite, quando as estrelas dan\xE7avam no c\xE9u e a lua derramava
+          seu brilho prateado sobre a terra"
         type: 4
         typeString: CustomFieldType_Localization
+      - title: EventGuid
+        value: 3424a022-fc43-4a60-bd0d-235d2020ed02
+        type: 0
+        typeString: 
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -294,7 +300,74 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: tessssteeee
+        value: But something was wrong; darkness was overtaking the garden.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: pt-BR
+        value: "Mas algo estava errado, a escurid\xE3o estava tomando conta do jardim"
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: EventGuid
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 3
+        destinationConversationID: 1
+        destinationDialogueID: 4
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 159
+        y: 132
+        width: 160
+        height: 30
+    - id: 4
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -309,6 +382,10 @@ MonoBehaviour:
         value: 
         type: 4
         typeString: CustomFieldType_Localization
+      - title: EventGuid
+        value: de20de98-d8eb-4cc4-aedf-540819fdc02c
+        type: 0
+        typeString: 
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -325,7 +402,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 159
-        y: 132
+        y: 182
         width: 160
         height: 30
     entryGroups: []

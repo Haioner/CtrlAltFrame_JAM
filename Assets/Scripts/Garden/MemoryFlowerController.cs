@@ -8,6 +8,7 @@ public class MemoryFlowerController : MonoBehaviour, IDamageable
     [SerializeField] private SpriteRenderer flowerRenderer;
     [SerializeField] private SpriteRenderer orbRenderer;
     [SerializeField] private ParticleSystem fullyParticle;
+    [SerializeField] private AudioClip fullyClip;
 
     [Header("Energy")]
     [SerializeField] private float maxEnergy;
@@ -51,6 +52,7 @@ public class MemoryFlowerController : MonoBehaviour, IDamageable
     {
         if (currentEnergy >= maxEnergy && !isFully)
         {
+            SoundManager.PlayAudioClip(fullyClip);
             isFully = true;
             OnFullyEvent?.Invoke();
             Instantiate(fullyParticle, transform);

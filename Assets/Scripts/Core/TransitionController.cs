@@ -9,6 +9,7 @@ public class TransitionController : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1f;
         instance = this;
         anim = GetComponent<Animator>();
     }

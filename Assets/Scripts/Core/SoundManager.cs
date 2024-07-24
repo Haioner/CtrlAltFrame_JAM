@@ -29,4 +29,11 @@ public class SoundManager : MonoBehaviour
         _audioSource.pitch = 1f;
         _audioSource.PlayOneShot(clip);
     }
+
+    public static void PlayAudioClipVolumeAndPitch(AudioClip clip, float volume, float pitch)
+    {
+        _audioSource.volume = volume;
+        _audioSource.pitch = pitch;
+        _audioSource.PlayOneShot(clip);
+    }
 }

@@ -34,11 +34,13 @@ public class EyeBlink : MonoBehaviour
             for (int i = 0; i < blinkSprites.Length; i++)
             {
                 spriteRenderer.sprite = blinkSprites[i];
+                spriteRenderer.material.SetTexture("_MainTex", blinkSprites[i].texture);
                 yield return new WaitForSeconds(blinkDuration / blinkSprites.Length);
             }
 
             // Return to the normal sprite
             spriteRenderer.sprite = normalSprite;
+            spriteRenderer.material.SetTexture("_MainTex", normalSprite.texture);
         }
     }
 }
