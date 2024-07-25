@@ -54,6 +54,11 @@ public class PlayerManager : MonoBehaviour
 #endif
     }
 
+    public void ClearCheckpoint()
+    {
+        checkPointPos = new Vector3(9.63f, 0, -23.38f);
+    }
+
     private void SpawnCheckPoint()
     {
         if (checkPointPos != Vector3.zero)
