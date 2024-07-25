@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [SerializeField] private AudioClip deathClip;
     [SerializeField] private PlayerManager playerManager;
     [SerializeField] private Volume deathVolume;
     private bool hasTrigger;
@@ -26,6 +27,7 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator Die()
     {
+        SoundManager.PlayAudioClip(deathClip);
         playerManager.SetPlayerControl(false);
         hasTrigger = true;
         CinemachineShake.instance.ShakeCamera(15, 0.1f);

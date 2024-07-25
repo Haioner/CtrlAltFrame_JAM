@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
@@ -13,14 +15,17 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private LayerMask damageableLayerMask;
     [SerializeField] private ParticleSystem hitParticle;
     [SerializeField] private LineRenderer lineRenderer;
+
+    [Header("Audio")]
     [SerializeField] private AudioClip attackClip;
+    [SerializeField] private float audioVolume = 1f;
+    [SerializeField] private Vector2 audioPitch = new Vector2(0.7f,1f);
+    private float currentAudioPitch = 1f;
 
     private PlayerManager playerManager;
     private Camera _camera;
     private float _nextAttackTime = 0f;
     private Vector3 _targetPoint;
-    private float currentAudioPitch = 1f;
-    private float currentAudioVolume = 1f;
 
     private void Start()
     {
@@ -32,6 +37,8 @@ public class PlayerAttack : MonoBehaviour
 
     public void OnFire(InputAction.CallbackContext context)
     {
+        if (IsPointerOverUIElement()) return;
+
         if (context.started)
         {
             IsFiring = true;
@@ -42,13 +49,23 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    private bool IsPointerOverUIElement()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = Mouse.current.position.ReadValue();
+
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+
+        return results.Count > 0;
+    }
+
     private void Update()
     {
         if (playerManager.CurrentEnergy <= 0) 
         {
             DisableLineRenderer();
-            currentAudioPitch = 1;
-            currentAudioVolume = 1;
+            currentAudioPitch = audioPitch.y;
             return;
         }
 
@@ -64,8 +81,7 @@ public class PlayerAttack : MonoBehaviour
         else
         {
             DisableLineRenderer();
-            currentAudioPitch = 1;
-            currentAudioVolume = 1;
+            currentAudioPitch = audioPitch.y;
         }
     }
 
@@ -97,13 +113,16 @@ public class PlayerAttack : MonoBehaviour
             _targetPoint = ray.GetPoint(100f);
         }
 
-        currentAudioPitch -= Time.deltaTime * 0.5f;
-        currentAudioPitch = Mathf.Clamp(currentAudioPitch, 0.7f, 1);
-        currentAudioVolume -= Time.deltaTime * 0.1f;
-        currentAudioVolume = Mathf.Clamp(currentAudioVolume, 0.1f, 1f);
-        SoundManager.PlayAudioClipVolumeAndPitch(attackClip, currentAudioVolume, currentAudioPitch);
-
+        CalculateAudio();
         SpawnHitParticle();
+    }
+
+    private void CalculateAudio()
+    {
+        currentAudioPitch -= Time.deltaTime * 0.5f;
+        currentAudioPitch = Mathf.Clamp(currentAudioPitch, audioPitch.x, audioPitch.y);
+
+        SoundManager.PlayContinousAudioClipVolumeAndPitch(attackClip, audioVolume, currentAudioPitch);
     }
 
     private void UpdateLine(Vector3 targetPoint)

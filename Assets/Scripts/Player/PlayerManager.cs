@@ -32,12 +32,14 @@ public class PlayerManager : MonoBehaviour
     private PlayerMovement playerMovement;
     private PlayerAnimationController playerAnimation;
 
+    public static Vector3 checkPointPos;
+
     private void Start()
     {
         playerAttack = GetComponent<PlayerAttack>();
         playerMovement = GetComponent<PlayerMovement>();
         playerAnimation = GetComponentInChildren<PlayerAnimationController>();
-
+        SpawnCheckPoint();
         CurrentEnergy = maxEnergy;
     }
 
@@ -45,6 +47,17 @@ public class PlayerManager : MonoBehaviour
     {
         CalculatePlayerEnergy();
         CalculatePlayerColor();
+
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.F))
+            transform.position = new Vector3(9.63f, 0, -23.38f);
+#endif
+    }
+
+    private void SpawnCheckPoint()
+    {
+        if (checkPointPos != Vector3.zero)
+            transform.position = checkPointPos;
     }
 
     public void SetPlayerControl(bool controlState)
