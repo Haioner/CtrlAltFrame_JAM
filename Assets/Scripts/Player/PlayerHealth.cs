@@ -1,6 +1,7 @@
 using UnityEngine.Rendering;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -34,6 +35,8 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Time.timeScale = 0.5f;
         yield return new WaitForSeconds(0.5f);
-        TransitionController.instance.TransitionToSceneName("Game");
+
+        string sceneName = SceneManager.GetActiveScene().name;
+        TransitionController.instance.TransitionToSceneName(sceneName);
     }
 }
