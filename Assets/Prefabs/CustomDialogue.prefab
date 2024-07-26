@@ -346,7 +346,7 @@ MonoBehaviour:
     - {fileID: 11466480}
     - {fileID: 11413806}
     defaultNPCSubtitlePanel: {fileID: 11466480}
-    defaultPCSubtitlePanel: {fileID: 11413806}
+    defaultPCSubtitlePanel: {fileID: 0}
     allowOpenSubtitlePanelsOnStartConversation: 1
     allowDialogueActorCustomPanels: 1
     menuPanels:

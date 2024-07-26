@@ -12,7 +12,7 @@ public class MemoryFlowerController : MonoBehaviour, IDamageable
 
     [Header("Energy")]
     [SerializeField] private float maxEnergy;
-    [Range(0f, 4f)][SerializeField] private float currentEnergy;
+    [Range(0f, 10)][SerializeField] private float currentEnergy;
 
     [Space]
     [SerializeField] private UnityEvent OnDamage;
