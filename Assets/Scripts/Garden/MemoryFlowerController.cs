@@ -52,6 +52,7 @@ public class MemoryFlowerController : MonoBehaviour, IDamageable
     {
         if (currentEnergy >= maxEnergy && !isFully)
         {
+            CinemachineShake.instance.ShakeCamera(5, 0.1f);
             SoundManager.PlayAudioClip(fullyClip);
             isFully = true;
             OnFullyEvent?.Invoke();

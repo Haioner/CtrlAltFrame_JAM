@@ -32,8 +32,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private Transform childGFX;
     [SerializeField] private AudioClip dashClip;
+    [SerializeField] private AudioClip jumpClip;
     [SerializeField] private AudioSource footStepAudioSource;
     [SerializeField] private List<AudioClip> footStepClips = new List<AudioClip>();
+    [SerializeField] private ParticleSystem jumpParticle;
     private int currentFootStop;
 
     private bool _isLanding = true;
@@ -188,7 +190,9 @@ public class PlayerMovement : MonoBehaviour
                 _jumpCount--;
                 _isLanding = false;
                 Invoke("SetIsLanding", 0.3f);
+                SoundManager.PlayAudioClipPitch(jumpClip, Random.Range(0.95f, 1.05f));
                 OnJumpEvent?.Invoke(this, System.EventArgs.Empty);
+                Instantiate(jumpParticle, transform.position, Quaternion.identity);
             }
             else
                 _coyoteTimeCounter = 0; // Reset coyote time counter
@@ -203,7 +207,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 _isDashing = true;
                 _dashTime = Time.time + dashDuration; // Set end time for the dash
-                SoundManager.PlayAudioClip(dashClip);
+                SoundManager.PlayAudioClipPitch(dashClip, Random.Range(0.95f, 1.05f));
                 OnDashEvent?.Invoke(this, System.EventArgs.Empty);
             }
         }
