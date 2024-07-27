@@ -122,6 +122,7 @@ namespace PixelCrushers
             {
                 instance.m_currentLanguage = value;
                 instance.UpdateUIs(value);
+                Initialize();
             }
         }
 
@@ -158,6 +159,7 @@ namespace PixelCrushers
             {
                 if (!string.IsNullOrEmpty(currentLanguagePlayerPrefsKey) && PlayerPrefs.HasKey(currentLanguagePlayerPrefsKey))
                 {
+                    //m_currentLanguage = UnityEngine.Localization.Settings.LocalizationSettings.SelectedLocale.Identifier.Code;
                     m_currentLanguage = PlayerPrefs.GetString(currentLanguagePlayerPrefsKey);
                     languageChanged?.Invoke(currentLanguage);
                 }

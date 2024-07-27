@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 22281022}
   - component: {fileID: 3382966145671034262}
   - component: {fileID: 11441550}
+  - component: {fileID: 9099658377699430646}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -157,6 +158,46 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &9099658377699430646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:22990f934eabbaa40a5cf5fab5ccb1bc
+    m_TableEntryReference:
+      m_KeyId: 14019859582976
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3382966145671034262}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &100490
 GameObject:
   m_ObjectHideFlags: 0
@@ -5081,7 +5122,7 @@ AudioSource:
   m_GameObject: {fileID: 5596842901523665002}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2632190432161408276, guid: 1e9674f1d348d99429296b9c686ced23, type: 2}
   m_audioClip: {fileID: 8300000, guid: 8f95271b0bb131849be577e7166b62b8, type: 3}
   m_Resource: {fileID: 8300000, guid: 8f95271b0bb131849be577e7166b62b8, type: 3}
   m_PlayOnAwake: 0

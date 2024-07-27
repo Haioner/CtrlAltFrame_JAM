@@ -555,7 +555,8 @@ namespace PixelCrushers.DialogueSystem
             }
             else
             {
-                SetLanguage(displaySettings.localizationSettings.language);
+               SetLanguage(UnityEngine.Localization.Settings.LocalizationSettings.SelectedLocale.Identifier.Code);
+                //SetLanguage(displaySettings.localizationSettings.language);
             }
             UILocalizationManager.languageChanged += OnLanguageChanged;
         }
@@ -588,7 +589,8 @@ namespace PixelCrushers.DialogueSystem
 
         private void OnLanguageChanged(string newLanguage)
         {
-            displaySettings.localizationSettings.language = newLanguage;
+            // displaySettings.localizationSettings.language = newLanguage;
+            displaySettings.localizationSettings.language = UnityEngine.Localization.Settings.LocalizationSettings.SelectedLocale.Identifier.Code;
             UpdateLocalizationOnActiveConversations();
         }
 
