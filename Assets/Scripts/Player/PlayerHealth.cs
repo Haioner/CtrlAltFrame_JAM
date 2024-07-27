@@ -1,10 +1,11 @@
+using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [SerializeField] private string deathToScene;
     [SerializeField] private AudioClip deathClip;
     [SerializeField] private PlayerManager playerManager;
     [SerializeField] private Volume deathVolume;
@@ -26,6 +27,11 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void ChangeDeathScene(string newSceneName)
+    {
+        deathToScene = newSceneName;
+    }
+
     private IEnumerator Die()
     {
         SoundManager.PlayAudioClip(deathClip);
@@ -36,7 +42,15 @@ public class PlayerHealth : MonoBehaviour
         Time.timeScale = 0.5f;
         yield return new WaitForSeconds(0.5f);
 
-        string sceneName = SceneManager.GetActiveScene().name;
-        TransitionController.instance.TransitionToSceneName(sceneName);
+        if(!string.IsNullOrEmpty(deathToScene))
+        {
+            TransitionController.instance.TransitionToSceneName(deathToScene);
+        }
+        else
+        {
+            string sceneName = SceneManager.GetActiveScene().name;
+            TransitionController.instance.TransitionToSceneName(sceneName);
+        }
+
     }
 }
