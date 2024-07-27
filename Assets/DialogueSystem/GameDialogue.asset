@@ -1111,7 +1111,7 @@ MonoBehaviour:
       - originConversationID: 4
         originDialogueID: 1
         destinationConversationID: 4
-        destinationDialogueID: 2
+        destinationDialogueID: 5
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1185,7 +1185,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 160
-        y: 130
+        y: 175
         width: 160
         height: 30
     - id: 3
@@ -1248,7 +1248,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 160
-        y: 180
+        y: 228
         width: 160
         height: 30
     - id: 4
@@ -1274,8 +1274,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: If they reach the <color=purple>central medulla</color>, they'll destroy
-          everything!!
+        value: They will destroy everything, it's only a matter of time before they
+          reach the <color=purple>memory tree</color>.
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1305,12 +1305,75 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 230
+        x: 158
+        y: 282
+        width: 160
+        height: 30
+    - id: 5
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: The wise call them "Amnesia"
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: pt-BR
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 5
+        destinationConversationID: 4
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 163
+        y: 126
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 0, y: 48}
     canvasZoom: 1
   syncInfo:
     syncActors: 0

@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 1
 --- !u!4 &8150080737796719219
 Transform:
@@ -43,7 +43,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0, g: 0.7615917, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.3
   m_Range: 10
   m_SpotAngle: 30
@@ -87,8 +87,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 20000
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -137,7 +137,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 1
 --- !u!4 &6607116696076564491
 Transform:
@@ -196,7 +196,7 @@ MonoBehaviour:
   fullyParticle: {fileID: 1155510060235583887, guid: f34e0fc9cf6de744cb319ac581428e8a, type: 3}
   fullyClip: {fileID: 8300000, guid: d30b2fba5e3022e48889904f6f74b24c, type: 3}
   maxEnergy: 10
-  currentEnergy: 0
+  currentEnergy: 7
   OnDamage:
     m_PersistentCalls:
       m_Calls:
@@ -275,6 +275,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 985198915499874827}
+        m_TargetAssemblyTypeName: FluidController, Assembly-CSharp
+        m_MethodName: StartRate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3603017941876320373}
+        m_TargetAssemblyTypeName: UnityEngine.Light, UnityEngine
+        m_MethodName: set_colorTemperature
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 3000
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VinesController, Assembly-CSharp
         m_MethodName: SwitchState
@@ -303,7 +327,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 1
 --- !u!4 &4548882977959708481
 Transform:
@@ -495,12 +519,14 @@ GameObject:
   m_Component:
   - component: {fileID: 7938948381329500280}
   - component: {fileID: 5131427334794346891}
+  - component: {fileID: 7643829208435550904}
+  - component: {fileID: 985198915499874827}
   m_Layer: 7
   m_Name: GFXParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 1
 --- !u!4 &7938948381329500280
 Transform:
@@ -626,6 +652,69 @@ MonoBehaviour:
   optionalScrambleMode: 0
   optionalShakeRandomnessMode: 0
   optionalString: 
+--- !u!114 &7643829208435550904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481043595863912717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3027f475235a4f7ab39c90b4bbf8567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splatMaterial: {fileID: 2100000, guid: 644c5fbe7e0624b239c5c09b7d1613ae, type: 2}
+  rateOverSteps: 0
+  rateOverTime: 0
+  rateOverDistance: 0
+  overridePosition: 0
+  position: {x: -0.13, y: 0}
+  positionRandomness: 0
+  overrideRotation: 1
+  rotation: 0
+  rotationRandomness: 0
+  scaleWithDistance: 0
+  scaleWithTransform: 0
+  scale: {x: 0.15, y: 0.15}
+  scaleRandomness: 0
+  velocityWeight: 0.2
+  velocityTexture: {fileID: 0}
+  maxRelativeVelocity: 2
+  velocityScale: {x: 3, y: 3, z: 0}
+  maxRelativeAngularVelocity: 12
+  angularVelocityScale: 0
+  force: {x: 0, y: 0, z: 0}
+  torque: 0
+  densityWeight: 0.01
+  densityTexture: {fileID: 2800000, guid: a2e7ead8889a04301b67bdd80469b3d3, type: 3}
+  srcBlend: 5
+  dstBlend: 10
+  blendOp: 2
+  color: {r: 0, g: 0, b: 0, a: 1}
+  noiseTexture: {fileID: 0}
+  densityNoise: 0
+  densityNoiseOffset: 0
+  densityNoiseTiling: 1
+  velocityNoise: 1
+  velocityNoiseOffset: 1
+  velocityNoiseTiling: 1
+--- !u!114 &985198915499874827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5481043595863912717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126a8e818d568a249a0616e510aa202e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 7643829208435550904}
+  rateStep: {x: 10, y: 100}
+  speedRate: 80
+  canStartRate: 0
 --- !u!1 &6746341784797285231
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +731,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 0
 --- !u!4 &830991049910404661
 Transform:
@@ -5485,7 +5574,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 0
 --- !u!4 &5438250710276134274
 Transform:
@@ -5606,7 +5695,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2
   m_IsActive: 0
 --- !u!4 &3334056183637406282
 Transform:

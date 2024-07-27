@@ -1,5 +1,6 @@
 using UnityEngine.InputSystem;
 using UnityEngine;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
@@ -30,6 +31,10 @@ public class PlayerMovement : MonoBehaviour
     [Header("CACHE")]
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private Transform childGFX;
+    [SerializeField] private AudioClip dashClip;
+    [SerializeField] private AudioSource footStepAudioSource;
+    [SerializeField] private List<AudioClip> footStepClips = new List<AudioClip>();
+    private int currentFootStop;
 
     private bool _isLanding = true;
     private CharacterController _controller;
@@ -74,6 +79,15 @@ public class PlayerMovement : MonoBehaviour
         CalculateGravity();
         UpdateCoyoteTime();
         HandleFlip();
+    }
+
+    public void FootStepEVENT()
+    {
+        if (_isGrounded)
+        {
+            currentFootStop = (currentFootStop + 1) % footStepClips.Count;
+            footStepAudioSource.PlayOneShot(footStepClips[currentFootStop]);
+        }
     }
 
     private void CheckGroundStatus()
@@ -189,6 +203,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 _isDashing = true;
                 _dashTime = Time.time + dashDuration; // Set end time for the dash
+                SoundManager.PlayAudioClip(dashClip);
                 OnDashEvent?.Invoke(this, System.EventArgs.Empty);
             }
         }
