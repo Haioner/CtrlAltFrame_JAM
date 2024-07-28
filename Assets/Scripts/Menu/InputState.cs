@@ -10,7 +10,7 @@ public class InputState : MonoBehaviour
     public void SwitchCanvasGroup()
     {
         canvasState = !canvasState;
-
+        PauseGame();
         if (canvasState)
         {
             cg.alpha = 1;
@@ -48,6 +48,9 @@ public class InputState : MonoBehaviour
 
     public void BackToMenu()
     {
+        if (FindFirstObjectByType<PlayerManager>() != null)
+            FindFirstObjectByType<PlayerManager>().ClearCheckpoint();
+        PlayerPrefs.DeleteKey("StartTrigger");
         TransitionController.instance.TransitionToSceneName("Menu");
         SetCanPauseGame(false);
     }

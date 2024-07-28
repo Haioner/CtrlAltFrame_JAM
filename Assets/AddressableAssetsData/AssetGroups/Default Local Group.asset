@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Default Local Group
   m_GUID: 4f43c4cee753d3f4db1a03adec471621
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: d50e098740db1354fbaa4b0ab234cb89
+    m_Address: Assets/Materials/SpriteMaterial/SpriteShadows.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5755835e89f7db24c8ee35b4e862649c, type: 2}
   m_SchemaSet:

@@ -16,6 +16,7 @@ public class TransitionController : MonoBehaviour
 
     public void TransitionToSceneName(string sceneName)
     {
+        anim.enabled = true;
         scene = sceneName;
         anim.Play("FadeOut");
     }

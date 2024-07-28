@@ -32,8 +32,6 @@ public class PlayerManager : MonoBehaviour
     private PlayerMovement playerMovement;
     private PlayerAnimationController playerAnimation;
 
-    public static Vector3 checkPointPos;
-
     private void Start()
     {
         playerAttack = GetComponent<PlayerAttack>();
@@ -56,13 +54,21 @@ public class PlayerManager : MonoBehaviour
 
     public void ClearCheckpoint()
     {
-        checkPointPos = Vector3.zero;
+        //checkPointPos = Vector3.zero;
+        PlayerPrefs.DeleteKey("xPos");
+        PlayerPrefs.DeleteKey("yPos");
+        PlayerPrefs.DeleteKey("zPos");
     }
 
     private void SpawnCheckPoint()
     {
-        if (checkPointPos != Vector3.zero)
-            transform.position = checkPointPos;
+        if (PlayerPrefs.HasKey("xPos"))
+        {
+            float xPos = PlayerPrefs.GetFloat("xPos");
+            float yPos = PlayerPrefs.GetFloat("yPos");
+            float zPos = PlayerPrefs.GetFloat("zPos");
+            transform.position = new Vector3(xPos, yPos, zPos);
+        }
     }
 
     public void SetPlayerControl(bool controlState)

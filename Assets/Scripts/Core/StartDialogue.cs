@@ -4,14 +4,13 @@ using UnityEngine.Events;
 public class StartDialogue : MonoBehaviour
 {
     [SerializeField] private UnityEvent triggerEvent;
-    private static bool hasTriggered;
 
     public void TriggerDialogue()
     {
-        if (!hasTriggered)
+        if (!PlayerPrefs.HasKey("StartTrigger"))
         {
+            PlayerPrefs.SetInt("StartTrigger", 1);
             triggerEvent?.Invoke();
-            hasTriggered = true;
         }
     }
 }

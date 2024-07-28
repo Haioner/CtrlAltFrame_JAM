@@ -14,5 +14,10 @@ public class PlayerCanvas : MonoBehaviour
     private void Update()
     {
         energySlider.value = playerManager.CurrentEnergy;
+
+        if (playerManager.CurrentEnergy >= playerManager.GetMaxEnergy())
+            energySlider.gameObject.SetActive(false);
+        else
+            energySlider.gameObject.SetActive(true);
     }
 }

@@ -10,10 +10,12 @@ public class Checkpoint : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && !hasTriggered)
         {
-            Debug.Log("Tocou " + gameObject.name);
             triggerEvent?.Invoke();
             hasTriggered = true;
-            PlayerManager.checkPointPos = transform.position;
+            //PlayerManager.checkPointPos = transform.position;
+            PlayerPrefs.SetFloat("xPos", transform.position.x);
+            PlayerPrefs.SetFloat("yPos", transform.position.y);
+            PlayerPrefs.SetFloat("zPos", transform.position.z);
         }
     }
 }
