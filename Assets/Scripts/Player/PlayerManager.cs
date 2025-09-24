@@ -28,9 +28,16 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float energyChangeRate = 10f;
     public float CurrentEnergy { get;private set; }
 
+    private CharacterController characterController;
     private PlayerAttack playerAttack;
     private PlayerMovement playerMovement;
     private PlayerAnimationController playerAnimation;
+
+    private void Awake()
+    {
+        characterController = GetComponent<CharacterController>();
+        characterController.enabled = false;
+    }
 
     private void Start()
     {
@@ -39,6 +46,7 @@ public class PlayerManager : MonoBehaviour
         playerAnimation = GetComponentInChildren<PlayerAnimationController>();
         SpawnCheckPoint();
         CurrentEnergy = maxEnergy;
+        characterController.enabled = true;
     }
 
     private void Update()
@@ -64,10 +72,13 @@ public class PlayerManager : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("xPos"))
         {
+            Debug.Log("moveu personagem");
+            SetPlayerControl(false);
             float xPos = PlayerPrefs.GetFloat("xPos");
             float yPos = PlayerPrefs.GetFloat("yPos");
             float zPos = PlayerPrefs.GetFloat("zPos");
             transform.position = new Vector3(xPos, yPos, zPos);
+            SetPlayerControl(true);
         }
     }
 

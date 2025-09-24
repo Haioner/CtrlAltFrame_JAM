@@ -56,7 +56,9 @@ public class MemoryFlowerController : MonoBehaviour, IDamageable
             SoundManager.PlayAudioClip(fullyClip);
             isFully = true;
             OnFullyEvent?.Invoke();
-            Instantiate(fullyParticle, transform);
+
+            if (fullyParticle != null)
+                Instantiate(fullyParticle, transform);
         }
     }
 

@@ -35070,6 +35070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particle Shockwave 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4193309508148691570, guid: 4613481ed95623b4ca81c27b9adaa018, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6873444655151215164, guid: 4613481ed95623b4ca81c27b9adaa018, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

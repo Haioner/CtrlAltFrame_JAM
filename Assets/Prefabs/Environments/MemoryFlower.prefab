@@ -193,7 +193,7 @@ MonoBehaviour:
   flowerSO: {fileID: 11400000, guid: 8274c2bb3c9c97848a5def766365add9, type: 2}
   flowerRenderer: {fileID: 5491860099908726432}
   orbRenderer: {fileID: 5491860099908726432}
-  fullyParticle: {fileID: 1155510060235583887, guid: f34e0fc9cf6de744cb319ac581428e8a, type: 3}
+  fullyParticle: {fileID: 0}
   fullyClip: {fileID: 8300000, guid: d30b2fba5e3022e48889904f6f74b24c, type: 3}
   maxEnergy: 10
   currentEnergy: 7

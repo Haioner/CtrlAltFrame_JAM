@@ -14,8 +14,8 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: haioner
   productName: Neurons
-  defaultCursor: {fileID: 2800000, guid: 1943dbfb623292c45ab7ac2d08633e63, type: 3}
-  cursorHotspot: {x: 128, y: 128}
+  defaultCursor: {fileID: 0}
+  cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.08627451, g: 0.09411766, b: 0.12941177, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 0
@@ -46,8 +46,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
-  defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 1280
+  defaultScreenHeightWeb: 720
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 1
   unsupportedMSAAFallback: 0
@@ -836,7 +836,7 @@ PlayerSettings:
     QNX: DOTWEEN
     Standalone: DOTWEEN;TMP_PRESENT;DREAMTECK_SPLINES
     VisionOS: DOTWEEN
-    WebGL: DOTWEEN;TMP_PRESENT
+    WebGL: DOTWEEN;TMP_PRESENT;DREAMTECK_SPLINES
     Windows Store Apps: DOTWEEN
     XboxOne: DOTWEEN
     iPhone: DOTWEEN
